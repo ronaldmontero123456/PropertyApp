@@ -45,5 +45,10 @@ namespace PropertyApp
             this.BindingContext = this;
             base.OnAppearing();
         }
+
+        private void Button_Clicked_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

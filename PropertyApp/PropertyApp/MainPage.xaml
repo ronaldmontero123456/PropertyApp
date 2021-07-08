@@ -59,7 +59,11 @@
                 </BindableLayout.ItemTemplate>
             </StackLayout>
         </ScrollView>
-        <Button Grid.Row="3" BackgroundColor="Blue" Text="AGREGAR EMPRESA" TextColor="White" Clicked="Button_Clicked"></Button>
+        <StackLayout HorizontalOptions="FillAndExpand" Grid.Row="3" Orientation="Horizontal">
+            <Button BackgroundColor="Blue"  HorizontalOptions="FillAndExpand" Text="AGREGAR CLIENTE" TextColor="White" Clicked="Button_Clicked_1"></Button>
+            <Button BackgroundColor="#FF4081"  HorizontalOptions="FillAndExpand" Text="AGREGAR EMPRESA" TextColor="White" Clicked="Button_Clicked"></Button>
+        </StackLayout>
+        
     </Grid>
 
 </ContentPage>
