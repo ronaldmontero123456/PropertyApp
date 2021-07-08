@@ -30,12 +30,6 @@ namespace PropertyApp.Controls.Popup
             Navigation.PushAsync(new ClientesPage(EmpId));
         }
 
-        private void TapGestureRecognizer_Tapped_1(object sender, EventArgs e)
-        {
-            PopupNavigation.Instance.PopAllAsync(true);
-            Navigation.PushAsync(new AgregarEmpresaPage());
-        }
-
         private void TapGestureRecognizer_Tapped_2(object sender, EventArgs e)
         {
 

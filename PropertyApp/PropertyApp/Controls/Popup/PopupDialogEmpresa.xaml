@@ -27,7 +27,7 @@
 
             <StackLayout
                 BackgroundColor="#3F51B5"
-                    HeightRequest="500"
+                    HeightRequest="300"
                     Orientation="Vertical"
                     VerticalOptions="Start"
                     WidthRequest="250">
@@ -46,14 +46,6 @@
                             </Image.GestureRecognizers>
                         </Image>
                         <Label Text="ELIMINAR EMPRESA" HorizontalOptions="Center" TextColor="Black"></Label>
-
-                        <Image  Source="ic_chrome_reader_mode_black_24dp.png" HeightRequest="45">
-                            <Image.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
-                            </Image.GestureRecognizers>
-                        </Image>
-                        <Label Text="AGREGAR EMPRESA" HorizontalOptions="Center" TextColor="Black"></Label>
-
                         <Image  Source="ic_work_black_24dp.png" HeightRequest="45">
                             <Image.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_3"/>

@@ -1,6 +1,7 @@
 ﻿using PropertyApp.Controls.Popup;
 using PropertyApp.DataAccess;
 using PropertyApp.Models;
+using PropertyApp.View;
 using Rg.Plugins.Popup.Extensions;
 using System;
 using System.Collections.Generic;
@@ -19,8 +20,6 @@ namespace PropertyApp
     {
         public MainPage()
         {
-            InitializeComponent();
-            this.BindingContext = this;
         }
 
         public List<Empresas> Empresas => GetEmpresas();
@@ -33,6 +32,18 @@ namespace PropertyApp
         private async void PropertySelected(object sender, EventArgs e)
         {
             await Navigation.PushPopupAsync(new PopupDialogEmpresa(((sender as Xamarin.Forms.View).BindingContext as Empresas).EmpId));
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new AgregarEmpresaPage());
+        }
+
+        protected override void OnAppearing()
+        {
+            InitializeComponent();
+            this.BindingContext = this;
+            base.OnAppearing();
         }
     }
 }

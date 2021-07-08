@@ -42,7 +42,8 @@ namespace PropertyApp.View
             SaveCommand = new Command(SaveEmpresa);
 
             InitializeComponent();
-            
+            BindingContext = this;
+
             if (_EmpId != -1)
             {
                 var empresa = new DS_Empresa().GetEmpresaById(_EmpId);
@@ -56,7 +57,7 @@ namespace PropertyApp.View
 
         private void entrysearch_TextChanged(object sender, TextChangedEventArgs e)
         {
-            Clientes = new ObservableCollection<Clientes>(mycli.GetClientesNotInEmpresa(_EmpId, entrysearch.Text));
+            Clientes = new ObservableCollection<Clientes>(mycli.GetClientesNotInEmpresa(_EmpId, searchclientes.Text));
         }
 
         private async void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
@@ -96,6 +97,7 @@ namespace PropertyApp.View
 
 
             new DS_Empresa().InsertEmpresa(empresa);
+            await Navigation.PopAsync(true);
         }
     }
 }

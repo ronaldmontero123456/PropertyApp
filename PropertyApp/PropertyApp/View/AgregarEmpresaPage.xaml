@@ -6,7 +6,7 @@
              Title="Agregar Empresa">
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Guardar" Icon="ic_done_white_24dp" Order="Primary" Command="{Binding SaveCommand}" x:Name="btnGuardar" IsEnabled="{Binding IsUp}"/>
+        <ToolbarItem Text="Guardar" Icon="ic_done_white_24dp" Order="Primary" Command="{Binding SaveCommand}" x:Name="btnGuardar"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
@@ -15,7 +15,6 @@
                     <RowDefinition Height="Auto"></RowDefinition>
                     <RowDefinition Height="Auto"></RowDefinition>
                     <RowDefinition Height="Auto"></RowDefinition>
-                    <RowDefinition Height="3"></RowDefinition>
                     <RowDefinition Height="Auto"></RowDefinition>
                 </Grid.RowDefinitions>
 
@@ -28,25 +27,29 @@
                 </Frame>
 
                 <Label Text="Asignar clientes " Grid.Row="2" TextColor="Black" FontSize="Title" HorizontalTextAlignment="Center"></Label>
-                <BoxView BackgroundColor="Black" Grid.Row="3"></BoxView>
-                
+
                 <StackLayout VerticalOptions="Center" Grid.Row="4"  Padding="10,50,10,100" HorizontalOptions="FillAndExpand" Margin="0,20,0,0" >
-                    <StackLayout BackgroundColor="White" Orientation="Horizontal">
-
-                        <Entry x:Name="entrysearch" Placeholder="Filtre su busqueda" android:Entry.ImeOptions="Search" FontSize="15" PlaceholderColor="#616161" 
-                               HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Margin="0" TextChanged="entrysearch_TextChanged"/>
-
-                        <ContentView VerticalOptions="Center" Opacity="0.6" WidthRequest="45" Margin="0">
-                            <Image Source="ic_search_black_24dp" HorizontalOptions="Center" VerticalOptions="Center">
-                                <Image.GestureRecognizers>
-                                    <TapGestureRecognizer Command="{Binding SearchCommand}" />
-                                </Image.GestureRecognizers>
-                            </Image>
-                        </ContentView>
-
-                    </StackLayout>
-                    <StackLayout>
-                            <ListView x:Name="ListView" 
+                    <Grid BackgroundColor="#F9F9F9" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="20">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="600"/>
+                        </Grid.RowDefinitions>
+                        <Frame HasShadow="True" Margin="0,20" Padding="0" HeightRequest="40" HorizontalOptions="FillAndExpand">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Image HeightRequest="20" WidthRequest="20" Margin="20,0" Source="search.png"/>
+                                <Entry x:Name="searchclientes" Grid.Column="1" Placeholder="Search" TextColor="Black" FontSize="15" FontFamily="ThemeFontRegular" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+                                <Image Grid.Column="2" HeightRequest="20" WidthRequest="20" Margin="20,0" Source="filter.png"/>
+                            </Grid>
+                        </Frame>
+                    </Grid>   
+                        <StackLayout>
+                        <ListView x:Name="ListView" 
                           ItemsSource="{Binding Clientes}"
                           ItemSelected ="ListView_ItemSelected"                       
                           BackgroundColor="Transparent"
