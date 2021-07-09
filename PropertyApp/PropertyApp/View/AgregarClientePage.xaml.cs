@@ -2,6 +2,7 @@
 using PropertyApp.Models;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -18,9 +19,16 @@ namespace PropertyApp.View
     {
         public new event PropertyChangedEventHandler PropertyChanged;
         public ICommand SaveCommand { get; private set; }
-        public AgregarClientePage()
+
+        public ObservableCollection<Direcciones> direcciones { get; set; }
+
+        public ObservableCollection<Direcciones> Direcciones { get => direcciones; set { direcciones = value; RaiseOnPropertyChanged(); } }
+        public AgregarClientePage(int cliid = -1)
         {
             SaveCommand = new Command(SaveCliente);
+
+            Direcciones = new ObservableCollection<Direcciones>(new DS_Direcciones().GetDireccionesByCliid(cliid));
+
             InitializeComponent();
         }
 
