@@ -49,9 +49,9 @@ namespace PropertyApp.DataAccess
 
         private void CreateTablesForOrionPrueba()
         {
-            CreateTable(typeof(Empresas), CreateFlags.None);
-            CreateTable(typeof(Clientes), CreateFlags.None);
-            CreateTable(typeof(Direcciones), CreateFlags.None);
+            CreateTable(typeof(Orden), CreateFlags.None);
+            CreateTable(typeof(Productos), CreateFlags.None);
+            CreateTable(typeof(ProdcutosOrden), CreateFlags.None);
             CreateTable(typeof(ClientesEmpresas), CreateFlags.None);
         }
 

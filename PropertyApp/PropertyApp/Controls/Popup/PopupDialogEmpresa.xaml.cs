@@ -16,10 +16,10 @@ namespace PropertyApp.Controls.Popup
     public partial class PopupDialogEmpresa : PopupPage
     {
 
-        private int EmpId;
-        public PopupDialogEmpresa(int empid)
+        private int Id;
+        public PopupDialogEmpresa(int id)
         {
-            EmpId = empid;
+            Id = id;
 
             InitializeComponent();
         }
@@ -27,7 +27,7 @@ namespace PropertyApp.Controls.Popup
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
             PopupNavigation.Instance.PopAllAsync(true);
-            Navigation.PushAsync(new ClientesPage(EmpId));
+            Navigation.PushAsync(new ClientesPage(Id));
         }
 
         private void TapGestureRecognizer_Tapped_2(object sender, EventArgs e)
@@ -38,7 +38,17 @@ namespace PropertyApp.Controls.Popup
         private void TapGestureRecognizer_Tapped_3(object sender, EventArgs e)
         {
             PopupNavigation.Instance.PopAllAsync(true);
-            Navigation.PushAsync(new AgregarEmpresaPage(EmpId));
+            Navigation.PushAsync(new AgregarEmpresaPage(Id));
+        }
+
+        private void TapGestureRecognizer_Tapped_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TapGestureRecognizer_Tapped_4(object sender, EventArgs e)
+        {
+
         }
     }
 }

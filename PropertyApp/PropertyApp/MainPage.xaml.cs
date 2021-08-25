@@ -22,11 +22,11 @@ namespace PropertyApp
         {
         }
 
-        public List<Empresas> Empresas => GetEmpresas();
+        public List<Orden> Empresas => GetEmpresas();
 
-        private List<Empresas> GetEmpresas()
+        private List<Orden> GetOrden()
         {
-            return SqliteManager.GetInstance().Query<Empresas>("select * from empresas", new string[] { });
+            return SqliteManager.GetInstance().Query<Orden>("select * from empresas", new string[] { });
         }
 
         private async void PropertySelected(object sender, EventArgs e)
@@ -36,19 +36,24 @@ namespace PropertyApp
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new AgregarEmpresaPage());
+            Navigation.PushAsync(new EmpleadosPage());
         }
 
         protected override void OnAppearing()
         {
             InitializeComponent();
-            this.BindingContext = this;
+            BindingContext = this;
             base.OnAppearing();
         }
 
         private void Button_Clicked_1(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new AgregarClientePage());
+            Navigation.PushAsync(new OrdenPage());
+        }
+
+        private void Button_Clicked_2(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ProductosPage());
         }
     }
 }

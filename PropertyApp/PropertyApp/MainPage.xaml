@@ -14,6 +14,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="600"/>
+            <RowDefinition Height="600"/>
         </Grid.RowDefinitions>
         <Frame HasShadow="True" Margin="0,20" Padding="0" HeightRequest="40" HorizontalOptions="FillAndExpand">
             <Grid>
@@ -60,8 +61,11 @@
             </StackLayout>
         </ScrollView>
         <StackLayout HorizontalOptions="FillAndExpand" Grid.Row="3" Orientation="Horizontal">
-            <Button BackgroundColor="Blue"  HorizontalOptions="FillAndExpand" Text="AGREGAR CLIENTE" TextColor="White" Clicked="Button_Clicked_1"></Button>
-            <Button BackgroundColor="#FF4081"  HorizontalOptions="FillAndExpand" Text="AGREGAR EMPRESA" TextColor="White" Clicked="Button_Clicked"></Button>
+            <Button BackgroundColor="Blue"  HorizontalOptions="FillAndExpand" Text="Agregar Orden" TextColor="White" Clicked="Button_Clicked_1"></Button>
+            <Button BackgroundColor="#FF4081"  HorizontalOptions="FillAndExpand" Text="Agregar Empleado" TextColor="White" Clicked="Button_Clicked"></Button>
+        </StackLayout>
+        <StackLayout HorizontalOptions="FillAndExpand" Grid.Row="4" Orientation="Horizontal">
+            <Button BackgroundColor="Blue"  HorizontalOptions="FillAndExpand" Text="Agregar Productos" TextColor="White" Clicked="Button_Clicked_2"></Button>
         </StackLayout>
         
     </Grid>
