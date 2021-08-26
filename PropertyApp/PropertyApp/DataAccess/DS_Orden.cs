@@ -11,7 +11,7 @@ namespace PropertyApp.DataAccess
         {
             try
             {
-                SqliteManager.GetInstance().InsertOrReplace(orden);
+                SqliteManager.GetInstance().Insert(orden);
             }
             catch (Exception e)
             {

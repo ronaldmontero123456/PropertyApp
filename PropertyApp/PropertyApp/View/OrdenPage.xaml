@@ -10,8 +10,8 @@
     <ContentPage.Content>
         <StackLayout>
             <Entry x:Name="EditDescripcion" Placeholder="Descripcion de la empresa" TextColor="Black" FontSize="15" FontFamily="ThemeFontRegular" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
-            <Picker ItemsSource="Empleados" SelectedItem="CurrentEmpleado" Title="(Seleccionar Empleado)"></Picker>
-            <Picker ItemsSource="Productos" SelectedItem="CurrentProducto" Title="(Seleccionar Producto)"></Picker>
+            <Picker ItemsSource="{Binding Empleados}" ItemDisplayBinding="{Binding EmpDescripcion}" SelectedItem="{Binding CurrentEmpleado}" Title="(Seleccionar Empleado)"></Picker>
+            <Picker ItemsSource="{Binding Productos}" ItemDisplayBinding="{Binding ProDescripcion}" SelectedItem="{Binding CurrentProducto}" Title="(Seleccionar Producto)"></Picker>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -34,24 +34,24 @@
 
                 <Frame VerticalOptions="FillAndExpand" BackgroundColor="#F9F9F9" Margin="5">
                     <StackLayout VerticalOptions="CenterAndExpand">
-                        <Label Text="Ver Empleado" HorizontalOptions="Center" TextColor="Black"></Label>
                         <Image Source="ic_event_busy_black_24dp.png" HeightRequest="45">
                             <Image.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2"/>
                             </Image.GestureRecognizers>
                         </Image>
-                        <Label Text="Editar Orden" HorizontalOptions="Center" TextColor="Black"></Label>
+                        <Label Text="Ver Empleado" HorizontalOptions="Center" TextColor="Black"></Label>
                         <Image  Source="ic_work_black_24dp.png" HeightRequest="45">
                             <Image.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
                             </Image.GestureRecognizers>
                         </Image>
-                        <Label Text="Ver Prodcutos" HorizontalOptions="Center" TextColor="Black"></Label>
+                        <Label Text="Editar Orden" HorizontalOptions="Center" TextColor="Black"></Label>
                         <Image  Source="ic_work_black_24dp.png" HeightRequest="45">
                             <Image.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_4"/>
                             </Image.GestureRecognizers>
                         </Image>
+                        <Label Text="Ver Prodcutos" HorizontalOptions="Center" TextColor="Black"></Label>
                     </StackLayout>              
                 </Frame>
             </StackLayout>

@@ -33,8 +33,7 @@ namespace PropertyApp.View
             _Id = Id;
 
             Productos = new ObservableCollection<Productos>(new DS_Productos().GetProductos());
-
-            EditDescripcion.Text = _Id == -1 ? "" : SqliteManager.GetInstance().Query<Productos>("select ProDescripcion from Orden where ordid = " + _Id.ToString() + "").FirstOrDefault().ProDescripcion;
+            
 
             if (_Id > -1 && Productos != null)
             {
@@ -52,6 +51,8 @@ namespace PropertyApp.View
             SaveCommand = new Command(SaveOrden);
 
             InitializeComponent();
+
+            EditDescripcion.Text = _Id == -1 ? "" : SqliteManager.GetInstance().Query<Orden>("select OrdDescripcion from Orden where ordid = " + _Id.ToString() + "").FirstOrDefault().OrdDescripcion;
 
             BindingContext = this;
         }

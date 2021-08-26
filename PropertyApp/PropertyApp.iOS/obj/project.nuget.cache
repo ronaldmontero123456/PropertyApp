@@ -1,20 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "Y727WePuh+KpUwpc+gPOyZPw+aNnhSQfJ796vVtis4o0n/+0Zn0VkHB7NGeYo2xmDJ/HpVFx31jYlAgSD563+w==",
+  "dgSpecHash": "Jr/557rBAOhGxaHod6IN0qM+QqzVfCroEVRTA+5BoBmRiVR43WNl/l0ZEmd/e2pTpxNOvHHt9DCASG7WiBROKQ==",
   "success": true,
-  "projectFilePath": "C:\\rmontero\\PropertyApp\\PropertyApp\\PropertyApp.iOS\\PropertyApp.iOS.csproj",
+  "projectFilePath": "D:\\rmontero\\PropertyApp\\PropertyApp\\PropertyApp.iOS\\PropertyApp.iOS.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\LEGION\\.nuget\\packages\\rg.plugins.popup\\1.1.4.168\\rg.plugins.popup.1.1.4.168.nupkg.sha512",
-    "C:\\Users\\LEGION\\.nuget\\packages\\sqlite-net-sqlcipher\\1.6.292\\sqlite-net-sqlcipher.1.6.292.nupkg.sha512",
-    "C:\\Users\\LEGION\\.nuget\\packages\\sqlitepclraw.bundle_sqlcipher\\1.1.13\\sqlitepclraw.bundle_sqlcipher.1.1.13.nupkg.sha512",
-    "C:\\Users\\LEGION\\.nuget\\packages\\sqlitepclraw.core\\1.1.13\\sqlitepclraw.core.1.1.13.nupkg.sha512",
-    "C:\\Users\\LEGION\\.nuget\\packages\\sqlitepclraw.lib.sqlcipher.ios_unified.static\\1.1.13\\sqlitepclraw.lib.sqlcipher.ios_unified.static.1.1.13.nupkg.sha512",
-    "C:\\Users\\LEGION\\.nuget\\packages\\sqlitepclraw.provider.internal.ios_unified\\1.1.13\\sqlitepclraw.provider.internal.ios_unified.1.1.13.nupkg.sha512",
-    "C:\\Users\\LEGION\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Users\\LEGION\\.nuget\\packages\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
-    "C:\\Users\\LEGION\\.nuget\\packages\\xamarin.forms\\4.5.0.617\\xamarin.forms.4.5.0.617.nupkg.sha512",
-    "C:\\Users\\LEGION\\.nuget\\packages\\xamarin.forms.pancakeview\\1.3.7\\xamarin.forms.pancakeview.1.3.7.nupkg.sha512",
-    "C:\\Users\\LEGION\\.nuget\\packages\\xamarin.plugin.sharedtransitions\\2.1.0\\xamarin.plugin.sharedtransitions.2.1.0.nupkg.sha512"
+    "C:\\Users\\PC\\.nuget\\packages\\rg.plugins.popup\\1.1.4.168\\rg.plugins.popup.1.1.4.168.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\sqlite-net-sqlcipher\\1.6.292\\sqlite-net-sqlcipher.1.6.292.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\sqlitepclraw.bundle_sqlcipher\\1.1.13\\sqlitepclraw.bundle_sqlcipher.1.1.13.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\sqlitepclraw.core\\1.1.13\\sqlitepclraw.core.1.1.13.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\sqlitepclraw.lib.sqlcipher.ios_unified.static\\1.1.13\\sqlitepclraw.lib.sqlcipher.ios_unified.static.1.1.13.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\sqlitepclraw.provider.internal.ios_unified\\1.1.13\\sqlitepclraw.provider.internal.ios_unified.1.1.13.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\xamarin.forms\\4.5.0.617\\xamarin.forms.4.5.0.617.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\xamarin.forms.pancakeview\\1.3.7\\xamarin.forms.pancakeview.1.3.7.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\xamarin.plugin.sharedtransitions\\2.1.0\\xamarin.plugin.sharedtransitions.2.1.0.nupkg.sha512"
   ],
   "logs": []
 }

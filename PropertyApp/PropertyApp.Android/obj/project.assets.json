@@ -2322,27 +2322,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\LEGION\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\PC\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\rmontero\\PropertyApp\\PropertyApp\\PropertyApp.Android\\PropertyApp.Android.csproj",
+      "projectUniqueName": "D:\\rmontero\\PropertyApp\\PropertyApp\\PropertyApp.Android\\PropertyApp.Android.csproj",
       "projectName": "PropertyApp.Android",
-      "projectPath": "C:\\rmontero\\PropertyApp\\PropertyApp\\PropertyApp.Android\\PropertyApp.Android.csproj",
-      "packagesPath": "C:\\Users\\LEGION\\.nuget\\packages\\",
-      "outputPath": "C:\\rmontero\\PropertyApp\\PropertyApp\\PropertyApp.Android\\obj\\",
+      "projectPath": "D:\\rmontero\\PropertyApp\\PropertyApp\\PropertyApp.Android\\PropertyApp.Android.csproj",
+      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+      "outputPath": "D:\\rmontero\\PropertyApp\\PropertyApp\\PropertyApp.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\LEGION\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -2356,8 +2353,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\rmontero\\PropertyApp\\PropertyApp\\PropertyApp\\PropertyApp.csproj": {
-              "projectPath": "C:\\rmontero\\PropertyApp\\PropertyApp\\PropertyApp\\PropertyApp.csproj"
+            "D:\\rmontero\\PropertyApp\\PropertyApp\\PropertyApp\\PropertyApp.csproj": {
+              "projectPath": "D:\\rmontero\\PropertyApp\\PropertyApp\\PropertyApp\\PropertyApp.csproj"
             }
           }
         }

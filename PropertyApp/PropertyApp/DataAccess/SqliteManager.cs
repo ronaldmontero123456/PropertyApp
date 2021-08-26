@@ -31,7 +31,7 @@ namespace PropertyApp.DataAccess
 
         public static string DbPath()
         {
-            var dbName = "OrionTekPrueba.db3";
+            var dbName = "ClaroPrueba.db3";
 
             var info = DependencyService.Get<IAppInfo>();
 
