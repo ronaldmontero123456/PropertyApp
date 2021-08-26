@@ -1,4 +1,6 @@
-﻿using PropertyApp.View;
+﻿using PropertyApp.DataAccess;
+using PropertyApp.Models;
+using PropertyApp.View;
 using Rg.Plugins.Popup.Pages;
 using Rg.Plugins.Popup.Services;
 using System;
@@ -23,32 +25,22 @@ namespace PropertyApp.Controls.Popup
 
             InitializeComponent();
         }
-
-        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
-        {
-            PopupNavigation.Instance.PopAllAsync(true);
-            Navigation.PushAsync(new ClientesPage(Id));
-        }
-
         private void TapGestureRecognizer_Tapped_2(object sender, EventArgs e)
         {
-
-        }
-
-        private void TapGestureRecognizer_Tapped_3(object sender, EventArgs e)
-        {
             PopupNavigation.Instance.PopAllAsync(true);
-            Navigation.PushAsync(new AgregarEmpresaPage(Id));
+            Navigation.PushAsync(new EmpleadosPage(Id));
         }
 
         private void TapGestureRecognizer_Tapped_1(object sender, EventArgs e)
         {
-
+            PopupNavigation.Instance.PopAllAsync(true);
+            Navigation.PushAsync(new OrdenPage(Id));
         }
 
         private void TapGestureRecognizer_Tapped_4(object sender, EventArgs e)
         {
-
+            PopupNavigation.Instance.PopAllAsync(true);
+            Navigation.PushAsync(new ProductosPage(Id));
         }
     }
 }

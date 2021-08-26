@@ -30,7 +30,7 @@
                     HeightRequest="400"
                     Orientation="Vertical"
                     VerticalOptions="Start"
-                    WidthRequest="400">
+                    WidthRequest="300">
 
                 <Frame VerticalOptions="FillAndExpand" BackgroundColor="#F9F9F9" Margin="5">
                     <StackLayout VerticalOptions="CenterAndExpand">
@@ -38,12 +38,6 @@
                         <Image Source="ic_event_busy_black_24dp.png" HeightRequest="45">
                             <Image.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2"/>
-                            </Image.GestureRecognizers>
-                        </Image>
-                        <Label Text="Eliminar Orden" HorizontalOptions="Center" TextColor="Black"></Label>
-                        <Image  Source="ic_work_black_24dp.png" HeightRequest="45">
-                            <Image.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_3"/>
                             </Image.GestureRecognizers>
                         </Image>
                         <Label Text="Editar Orden" HorizontalOptions="Center" TextColor="Black"></Label>

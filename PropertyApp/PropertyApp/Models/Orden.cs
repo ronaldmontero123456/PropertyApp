@@ -6,6 +6,10 @@ namespace PropertyApp.Models
     {
         [PrimaryKey, AutoIncrement]
         public int OrdId { get; set; }
-        public string OrdDescripcion2 { get; set; }
+        public int ProId { get; set; }
+        public int  EmpId { get; set; }
+        [Ignore]
+        public string OrdNombre => $"Orden-{ OrdId}";
+        public string OrdDescripcion { get; set; }
     }
 }

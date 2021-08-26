@@ -22,7 +22,7 @@ namespace PropertyApp
         {
         }
 
-        public List<Orden> Empresas => GetEmpresas();
+        public List<Orden> Ordenes => GetOrden();
 
         private List<Orden> GetOrden()
         {
@@ -31,7 +31,7 @@ namespace PropertyApp
 
         private async void PropertySelected(object sender, EventArgs e)
         {
-            await Navigation.PushPopupAsync(new PopupDialogEmpresa(((sender as Xamarin.Forms.View).BindingContext as Empresas).EmpId));
+            await Navigation.PushPopupAsync(new PopupDialogEmpresa(((sender as Xamarin.Forms.View).BindingContext as Orden).OrdId));
         }
 
         private void Button_Clicked(object sender, EventArgs e)

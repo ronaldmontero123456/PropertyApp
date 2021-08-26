@@ -7,6 +7,7 @@ namespace PropertyApp.Models
     public class Empleados
     {
         public int EmpId { get; set; }
+        public int OrdId { get; set; }
         public string EmpDescripcion { get; set; }
     }
 }

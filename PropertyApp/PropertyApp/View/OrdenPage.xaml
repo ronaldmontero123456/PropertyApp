@@ -2,11 +2,16 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PropertyApp.View.OrdenPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Guardar" Icon="ic_done_white_24dp" Order="Primary" Command="{Binding SaveCommand}" x:Name="btnGuardar"/>
+    </ContentPage.ToolbarItems>
+
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Entry x:Name="EditDescripcion" Placeholder="Descripcion de la empresa" TextColor="Black" FontSize="15" FontFamily="ThemeFontRegular" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+            <Picker ItemsSource="Empleados" SelectedItem="CurrentEmpleado" Title="(Seleccionar Empleado)"></Picker>
+            <Picker ItemsSource="Productos" SelectedItem="CurrentProducto" Title="(Seleccionar Producto)"></Picker>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

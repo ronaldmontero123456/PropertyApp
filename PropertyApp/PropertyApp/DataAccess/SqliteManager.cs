@@ -51,8 +51,7 @@ namespace PropertyApp.DataAccess
         {
             CreateTable(typeof(Orden), CreateFlags.None);
             CreateTable(typeof(Productos), CreateFlags.None);
-            CreateTable(typeof(ProdcutosOrden), CreateFlags.None);
-            CreateTable(typeof(ClientesEmpresas), CreateFlags.None);
+            CreateTable(typeof(Empleados), CreateFlags.None);
         }
 
 
